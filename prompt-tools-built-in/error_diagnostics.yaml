@@ -1,0 +1,29 @@
+title: error_diagnostics
+description: |
+    # What
+    This tool provides a systematic approach to error diagnosis, including:
+    - Error message analysis and interpretation
+    - Stack trace investigation
+    - Root cause analysis methodology
+    - Debugging strategies and techniques
+    - Error handling best practices
+
+    # Why
+    Use this tool when users need help troubleshooting errors. It's particularly valuable when:
+    - User shares error messages or stack traces
+    - User describes unexpected behavior or crashes
+    - User mentions debugging challenges
+    - Discussion involves error handling or root cause analysis
+
+    This tool helps quickly identify and resolve issues by providing structured guidance for error diagnosis and debugging.
+parameters:
+    - name: options
+      description: Provide 2-4 diagnostic approaches or potential causes based on error information
+usage: |
+    <thinking>
+    User has shared a 500 error from their API but the cause isn't immediately obvious.
+    </thinking>
+    <prompt_tool>
+    <tool_name>error_diagnostics</tool_name>
+    <options>["Check Server Logs for Detailed Error Message", "Verify Database Connection Issues", "Inspect API Request Payload Validation", "Examine Third-Party Service Dependencies"]</options>
+    </prompt_tool>

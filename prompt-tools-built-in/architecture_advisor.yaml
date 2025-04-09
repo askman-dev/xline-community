@@ -1,0 +1,30 @@
+title: architecture_advisor
+description: |
+    # What
+    This tool provides expert guidance on software architecture decisions by:
+    - Evaluating trade-offs between architectural approaches
+    - Recommending appropriate design patterns
+    - Assessing scalability and performance implications
+    - Considering maintainability and extensibility
+    - Analyzing system requirements and constraints
+    - Suggesting best practices for chosen architecture
+
+    # Why
+    Use this tool when making critical architectural decisions. It's particularly valuable when:
+    - User mentions system design or architecture
+    - User is starting a new project or significant feature
+    - User needs to choose between architectural patterns
+    - User expresses concern about scalability, maintainability, or performance
+
+    This tool helps make informed architectural decisions by evaluating trade-offs and aligning solutions with business requirements.
+parameters:
+    - name: options
+      description: Provide 2-4 architectural options relevant to the user's specific requirements
+usage: |
+    <thinking>
+    User is designing a data-intensive application but hasn't decided on the overall architecture.
+    </thinking>
+    <prompt_tool>
+    <tool_name>architecture_advisor</tool_name>
+    <options>["Microservices with API Gateway", "Monolith with Domain-Driven Design", "Event-Driven Architecture", "Serverless Architecture"]</options>
+    </prompt_tool>

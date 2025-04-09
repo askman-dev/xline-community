@@ -1,0 +1,34 @@
+title: variable_namer
+description: |
+    # What
+    This tool assists in generating clear, concise, and conventional variable names. It helps with:
+    - Suggesting names based on the variable's purpose or content.
+    - Optimizing existing variable names for better readability and maintainability.
+    - Explaining common naming conventions (e.g., camelCase, snake_case, PascalCase) and when to use them.
+    - Identifying potentially confusing or ambiguous names in code snippets.
+
+    # Why
+    Use this tool when the conversation involves variable naming challenges. It's valuable when:
+    - User explicitly asks for help naming a variable.
+    - User asks for suggestions to improve existing variable names.
+    - User shares code containing unclear, inconsistent, or poorly chosen variable names (e.g., single letters like `x`, `i` outside of simple loops, abbreviations like `usrDat`).
+    - Discussion touches upon code readability, maintainability, or specific naming conventions.
+
+    This tool promotes writing cleaner, more understandable code by adhering to best practices in variable naming.
+parameters:
+    - name: options
+      description: |
+        Provide 2-4 options guiding the user on the specific type of naming assistance needed. Focus on common naming tasks.
+        Examples:
+        - "Suggest names for a variable representing [concept]"
+        - "Review the names in my code snippet for clarity"
+        - "Explain common naming conventions (camelCase, snake_case)"
+        - "Refactor this specific variable name: [existing_name]"
+usage: |
+    <thinking>
+    The user needs help naming a variable that stores the count of active users but hasn't specified any constraints or context. Providing options helps clarify the type of assistance required.
+    </thinking>
+    <prompt_tool>
+    <tool_name>variable_namer</tool_name>
+    <options>["Suggest names for a user count", "Explain JavaScript naming conventions", "Review my existing variable names"]</options>
+    </prompt_tool>

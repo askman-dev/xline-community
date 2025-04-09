@@ -1,0 +1,30 @@
+title: performance_optimizer
+description: |
+    # What
+    This tool provides comprehensive performance optimization guidance by:
+    - Analyzing performance bottlenecks and hotspots
+    - Recommending optimization strategies
+    - Evaluating rendering and computation efficiency
+    - Optimizing database queries and data access
+    - Improving algorithm complexity
+    - Suggesting caching and memoization strategies
+
+    # Why
+    Use this tool when application performance needs improvement. It's particularly valuable when:
+    - User mentions performance issues, slowness, or bottlenecks
+    - User shares performance profiling results
+    - User needs to prioritize optimization efforts
+    - Discussion involves rendering, database, or algorithm efficiency
+
+    This tool helps improve application performance by identifying bottlenecks and providing targeted optimization strategies.
+parameters:
+    - name: options
+      description: Provide 2-4 optimization strategies specific to the identified performance issues
+usage: |
+    <thinking>
+    User has a React application with rendering performance issues but hasn't determined the root cause.
+    </thinking>
+    <prompt_tool>
+    <tool_name>performance_optimizer</tool_name>
+    <options>["Component Memoization Strategy", "Virtual List Implementation", "Bundle Size Reduction", "Expensive Calculation Optimization"]</options>
+    </prompt_tool>

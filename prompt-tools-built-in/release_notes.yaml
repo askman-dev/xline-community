@@ -1,0 +1,36 @@
+title: release_notes
+description: |
+    # What
+    This tool provides comprehensive release documentation assistance by:
+    - Generating structured release notes and changelogs
+    - Organizing changes by type (features, fixes, etc.)
+    - Highlighting breaking changes and deprecations
+    - Formatting content for different audiences
+    - Including relevant metadata and version info
+    - Following changelog best practices
+
+    # Why
+    Use this tool when documenting software changes. It's particularly valuable when:
+    - User mentions release notes or changelog
+    - User wants to summarize code changes
+    - User needs to communicate about updates
+    - User needs to track version history
+
+    This tool helps maintain clear and consistent release documentation by organizing changes in a user-friendly format.
+parameters:
+    - name: auto_followup
+      description: |
+          Write a direct instruction as if the user is telling you what they want in the release notes. This should be phrased as a user command or request in first-person, such as:
+          - "Please organize the release notes with Features, Bug Fixes, and Performance Improvements sections"
+          - "Include emoji icons next to each feature item in the release notes"
+          - "Make sure to highlight the security fixes prominently in this changelog"
+
+          The instruction should be specific and representative of how a user would naturally phrase their requirements for release notes documentation.
+usage: |
+    <thinking>
+    User wants to create release notes but hasn't provided details about the formatting preferences.
+    </thinking>
+    <prompt_tool>
+    <tool_name>release_notes</tool_name>
+    <auto_followup>Please structure the release notes with Features, Bug Fixes, and Known Issues sections, and highlight any breaking changes at the top.</auto_followup>
+    </prompt_tool>

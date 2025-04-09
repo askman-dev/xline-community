@@ -1,0 +1,30 @@
+title: code_refactor
+description: |
+    # What
+    This tool provides expert guidance on code refactoring by:
+    - Breaking down complex functions into smaller, focused components
+    - Identifying and eliminating code duplication
+    - Applying appropriate design patterns
+    - Improving naming and organization
+    - Suggesting architectural improvements
+    - Implementing clean code principles
+
+    # Why
+    Use this tool when code needs restructuring for better maintainability. It's particularly valuable when:
+    - User mentions refactoring or restructuring code
+    - Code being discussed exceeds 100+ lines or has high complexity
+    - User expresses concern about code maintainability
+    - User shows code with nested conditionals, duplicated logic, or long functions
+
+    This tool helps improve code quality and maintainability by applying proven refactoring techniques and design patterns.
+parameters:
+    - name: options
+      description: Provide 2-4 refactoring strategies appropriate for the specific code context
+usage: |
+    <thinking>
+    User has shared a complex function with multiple responsibilities and nested logic.
+    </thinking>
+    <prompt_tool>
+    <tool_name>code_refactor</tool_name>
+    <options>["Extract Helper Functions", "Apply Strategy Pattern", "Implement Command Pattern", "Simplify Conditional Logic"]</options>
+    </prompt_tool>

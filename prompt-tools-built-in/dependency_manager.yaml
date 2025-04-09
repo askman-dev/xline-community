@@ -1,0 +1,30 @@
+title: dependency_manager
+description: |
+    # What
+    This tool provides comprehensive dependency management assistance by:
+    - Analyzing package dependencies and their relationships
+    - Identifying outdated packages and security vulnerabilities
+    - Resolving version conflicts and compatibility issues
+    - Recommending safe update strategies
+    - Managing transitive dependencies
+    - Optimizing dependency tree structure
+
+    # Why
+    Use this tool when managing package dependencies. It's particularly valuable when:
+    - User mentions dependency updates or vulnerabilities
+    - User shares package.json or similar dependency files
+    - User expresses concern about outdated packages
+    - Discussion involves version conflicts or compatibility issues
+
+    This tool helps maintain a healthy and secure dependency tree by providing expert guidance on package management decisions.
+parameters:
+    - name: auto_followup
+      description: Ask user for specific information about their dependency management goals
+usage: |
+    <thinking>
+    User needs to update dependencies but hasn't specified their priorities (security vs features).
+    </thinking>
+    <prompt_tool>
+    <tool_name>dependency_manager</tool_name>
+    <auto_followup>Please provide your package.json file so I can analyze your dependencies and recommend which ones to update first based on security vulnerabilities and compatibility risks.</auto_followup>
+    </prompt_tool>

@@ -1,0 +1,30 @@
+title: query_optimizer
+description: |
+    # What
+    This tool provides expert guidance on database query optimization by:
+    - Analyzing query execution plans and performance
+    - Recommending indexing strategies
+    - Optimizing query structure and JOINs
+    - Suggesting materialized views and caching
+    - Improving data access patterns
+    - Implementing query tuning best practices
+
+    # Why
+    Use this tool when database query performance needs improvement. It's particularly valuable when:
+    - User shares SQL queries or database issues
+    - User mentions slow queries or performance concerns
+    - User shows execution plans or timing data
+    - Discussion involves indexing or query structure
+
+    This tool helps improve database performance by optimizing queries and implementing efficient data access strategies.
+parameters:
+    - name: options
+      description: Provide 2-4 query optimization strategies based on the specific query issues
+usage: |
+    <thinking>
+    User has a complex JOIN query that's performing slowly but hasn't identified specific bottlenecks.
+    </thinking>
+    <prompt_tool>
+    <tool_name>query_optimizer</tool_name>
+    <options>["Index Optimization Strategy", "Query Restructuring with Subqueries", "Materialized View Implementation", "Partitioning Strategy"]</options>
+    </prompt_tool>

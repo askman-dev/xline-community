@@ -1,0 +1,35 @@
+title: commit_assistant
+description: |
+    # What
+    This tool provides comprehensive commit assistance by:
+    - Analyzing workspace changes and recommending files for commit grouping
+    - Generating commit messages following Conventional Commits specification
+    - Detecting potential sensitive information or debug code
+    - Executing git commands to complete the commit process
+    - Organizing changes into logical commits
+    - Ensuring commit message quality and consistency
+
+    # Why
+    Use this tool when managing code commits. It's particularly valuable when:
+    - User explicitly requests to commit code or generate commit messages
+    - User indicates completion of a task or feature development
+    - User asks which files should be committed
+    - Uncommitted changes are detected in the workspace and the conversation suggests development tasks are complete
+
+    This tool helps maintain a clean and well-documented git history by ensuring commits are properly organized and documented.
+parameters:
+    - name: options
+      description: |
+          Provide 2-4 commit-related options, such as:
+          - Different types of commits (feat, fix, refactor, etc.)
+          - Different file grouping schemes by scope
+          - Whether to include specific files
+          - Level of detail in commit messages
+usage: |
+    <thinking>
+    User has just completed API feature development with multiple files modified, but may need to split into logically related commits.
+    </thinking>
+    <prompt_tool>
+    <tool_name>commit_assistant</tool_name>
+    <options>["Commit all API-related files (feat: implement user API)", "Separate test files commit (chore: add unit tests)", "Commit only core functionality files (feat: add user authentication)", "Exclude temporary debug files and commit the rest"]</options>
+    </prompt_tool>

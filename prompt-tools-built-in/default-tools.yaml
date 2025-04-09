@@ -1,0 +1,74 @@
+tools:
+    # Example of a tool using 'options' parameter type
+    - title: template_with_options
+      description: |
+          # What
+          This tool provides the following capabilities:
+          - KEY_POINT: Brief explanation
+          - ANOTHER_POINT: Brief explanation
+          - THIRD_POINT: Brief explanation
+          # Add more capabilities as needed
+
+          # Why
+          Use this tool in the following scenarios:
+          1. Specific user requests that should trigger this tool
+          2. Content patterns in user inputs that indicate this tool is needed
+          3. Situations where the tool should be proactively suggested
+          4. Related keywords that might signal tool relevance
+
+          This tool helps [describe the main value proposition and benefits].
+      parameters:
+          - name: options
+            description: |
+                Explain what type of options should be provided. Consider including:
+
+                - What kinds of choices make sense for this tool
+                - How specific the options should be
+                - How many options to include (typically 2-5)
+                - What information should be considered when generating options
+      usage: |
+          <thinking>
+          Briefly describe the situation where this tool would be used and why options are needed.
+          </thinking>
+          <prompt_tool>
+          <tool_name>tool_name_with_options</tool_name>
+          <options>["Example Option 1", "Example Option 2", "Example Option 3", "Example Option 4"]</options>
+          </prompt_tool>
+
+    # Example of a tool using 'auto_followup' parameter type
+    - title: template_with_followup
+      description: |
+          # What
+          This tool provides assistance with:
+          - Core functionality point 1
+          - Core functionality point 2
+          - Core functionality point 3
+          # Add more capabilities as needed
+
+          # Why
+          Use this tool in the following scenarios:
+          - Specific user requests related to this tool's purpose
+          - Scenarios where this tool provides value
+          - Situations where additional user input is needed
+
+          This tool helps [describe the main value proposition and benefits].
+      parameters:
+          - name: auto_followup
+            description: |
+                Explain how to write the auto_followup message. Important points:
+                - Write from the user's perspective, as if they are giving instructions
+                - Phrase as a command or request, not as a question
+                - Focus on specific requirements or preferences
+
+                Examples of good follow-up formats:
+                - "Please include [specific element] in the output"
+                - "Format the result with [specific sections or style]"
+                - "Make sure to highlight [important aspects] in the response"
+      usage: |
+          <thinking>
+          Briefly describe why auto_followup is needed in this situation and what information is missing.
+          </thinking>
+          <prompt_tool>
+          <tool_name>tool_name_with_followup</tool_name>
+          <auto_followup>Example of what a user might request as a follow-up instruction for this specific tool.</auto_followup>
+          </prompt_tool>

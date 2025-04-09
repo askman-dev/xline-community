@@ -1,0 +1,43 @@
+title: unit_test
+description: |
+    # What
+    This tool provides specialized guidance on creating effective unit tests that follow industry best practices:
+
+    - FOCUS: One behavior per test
+    - ARRANGE-ACT-ASSERT: Clear structure
+    - ISOLATION: Independent tests
+    - NAMING: [UnitOfWork_Scenario_ExpectedBehavior]
+    - READABILITY: Tests as documentation
+    - PERFORMANCE: Fast execution (<100ms)
+    - DETERMINISM: Consistent results
+    - DEPENDENCY MANAGEMENT: Strategic mocking
+    - BOUNDARY FOCUS: Test public interfaces
+    - COVERAGE BALANCE: Quality over quantity
+
+    # Why
+    Use this tool when users request help writing, improving, or reviewing test cases. It's particularly valuable when:
+
+    1. User asks for code implementation without mentioning tests
+    2. User shares code without corresponding tests
+    3. User expresses uncertainty about testing approaches
+    4. Test-related keywords appear: "test", "spec", "assertion", "coverage", "mock"
+
+    This tool helps ensure code quality, maintainability, and reliability by providing expert guidance on test implementation and best practices.
+parameters:
+    - name: options
+      description: |
+          Provide 2-5 contextually relevant testing options based on the conversation. Options should be specific to the user's situation and might include:
+
+          - Testing framework choices appropriate for their language/environment
+          - Different testing approaches (TDD, BDD, property-based)
+          - Mocking strategies for specific dependencies
+          - Test organization patterns
+          - Specific edge cases to consider
+usage: |
+    <thinking>
+    User needs guidance on testing approach but hasn't specified key details needed to provide optimal test implementation.
+    </thinking>
+    <prompt_tool>
+    <tool_name>unit_test</tool_name>
+    <options>["Jest with React Testing Library", "Component snapshot testing", "Integration tests with mock API", "Custom hook testing approach"]</options>
+    </prompt_tool>

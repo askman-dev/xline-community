@@ -1,0 +1,29 @@
+title: code_review
+description: |
+    # What
+    This tool provides structured code review guidance, focusing on:
+    - Code quality and maintainability
+    - Best practices and standards compliance
+    - Security and performance considerations
+    - Test coverage and documentation
+    - Architecture and design patterns
+
+    # Why
+    Use this tool when users need help with code reviews. It's particularly valuable when:
+    - User asks for code evaluation or feedback
+    - User shares code they've written or received
+    - User mentions pull requests or code quality
+    - Discussion involves best practices or standards compliance
+
+    This tool helps ensure code quality and maintainability by providing expert guidance on code review best practices and standards.
+parameters:
+    - name: options
+      description: Provide 2-4 review focus areas relevant to the shared code
+usage: |
+    <thinking>
+    User has shared code for review but hasn't specified what aspects they want feedback on.
+    </thinking>
+    <prompt_tool>
+    <tool_name>code_review</tool_name>
+    <options>["Security Vulnerability Assessment", "Performance Optimization Review", "Code Style & Best Practices", "Test Coverage Evaluation"]</options>
+    </prompt_tool>

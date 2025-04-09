@@ -1,0 +1,46 @@
+title: api_documenter
+description: |
+    # What
+    This tool provides comprehensive API documentation guidance, including:
+    - API endpoint specifications and descriptions
+    - Request/response format documentation
+    - Parameter validation and requirements
+    - Authentication and authorization details
+    - Error handling and status codes
+    - Rate limiting and usage guidelines
+    - Environment-specific configurations
+    - Request/response examples
+
+    # Why
+    Use this tool when conversations involve API documentation. It's particularly valuable when:
+    - User asks for help writing API documentation
+    - User shares incomplete API details
+    - Discussion involves documenting endpoints or interfaces
+    - Critical documentation elements are missing, such as:
+      * Base URL or environment information
+      * HTTP methods (GET, POST, PUT, DELETE)
+      * Content types (JSON, XML, form-data)
+      * Request/response examples
+      * Required/optional parameters
+      * Response status codes and error handling
+      * Authentication requirements
+      * Rate limiting information
+
+    This tool helps create clear, complete, and consistent API documentation that follows industry best practices.
+parameters:
+    - name: auto_followup
+      description: |
+          Write instructions as if the user is telling you what additional information to include in the API documentation. Focus on commonly missing elements. The message should sound like a user providing requirements, not like you asking questions.
+
+          Examples:
+          - "Please make sure to include request examples for both valid and invalid inputs"
+          - "For each parameter, specify whether it's required or optional and include default values"
+          - "Document all possible response status codes and their meanings"
+usage: |
+    <thinking>
+    User wants API documentation but has omitted details about parameter requirements, authentication, and error responses.
+    </thinking>
+    <prompt_tool>
+    <tool_name>api_documenter</tool_name>
+    <auto_followup>Please follow our company's documentation format: include base URL, clearly mark all parameters as required/optional with default values, provide request examples for both JSON and form-data, document all response status codes (200, 400, 401, 403, 500), and include error response examples for each error case.</auto_followup>
+    </prompt_tool>
